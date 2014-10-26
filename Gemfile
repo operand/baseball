@@ -1,21 +1,9 @@
 source 'https://rubygems.org'
 
-# core application gems
-gem 'pg'
+gem 'sqlite3'
 gem 'rake'
-
-group :development do
-  gem 'guard-rspec'
-end
-
-group :development, :test do
-  gem 'pry-byebug'
-  gem 'awesome_print'
-end
-
-group :test do
-  gem 'timecop'
-end
-
-group :production do
-end
+gem 'activerecord'
+gem 'awesome_print'
+gem 'database_cleaner'
+gem 'guard-rspec' # I like this gem. It speeds up my TDD workflow.
+gem 'pry-byebug' # I use the debugger a lot while developing
